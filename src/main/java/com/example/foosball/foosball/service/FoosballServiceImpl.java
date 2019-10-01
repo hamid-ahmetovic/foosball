@@ -14,10 +14,10 @@ public class FoosballServiceImpl implements FoosballService {
 
     private final static String HOME = "home";
 
-    private int homeScore = 0;
-    private int awayScore = 0;
-    private List<LocalTime> homeScoreHistory = new ArrayList<>();
-    private List<LocalTime> awayScoreHistory = new ArrayList<>();
+    private int homeScore;
+    private int awayScore;
+    private List<LocalTime> homeScoreHistory;
+    private List<LocalTime> awayScoreHistory;
     private GameHistory gameHistory;
 
 
@@ -25,6 +25,8 @@ public class FoosballServiceImpl implements FoosballService {
     public void setGameHistory() {
         gameHistory = new GameHistory();
         gameHistory.setScores(new ArrayList<>());
+
+        this.resetGame();
     }
 
     @Override
@@ -37,8 +39,6 @@ public class FoosballServiceImpl implements FoosballService {
             awayScore++;
             awayScoreHistory.add(now);
         }
-
-
     }
 
     @Override
@@ -57,4 +57,13 @@ public class FoosballServiceImpl implements FoosballService {
     public GameHistory getGameHistory() {
         return null;
     }
+
+    @Override
+    public void resetGame() {
+        this.homeScore = 0;
+        this.awayScore = 0;
+        this.homeScoreHistory = new ArrayList<>();
+        this.awayScoreHistory = new ArrayList<>();
+    }
+
 }

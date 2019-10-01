@@ -7,4 +7,5 @@ public interface FoosballService {
     void setScore(final String team);
     Score getScore();
     GameHistory getGameHistory();
+    void resetGame();
 }
