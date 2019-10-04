@@ -16,10 +16,10 @@ public class Match {
     private boolean isRunning = false;
 
     @Setter
-    private boolean isStarted = false;
+    private boolean isPlayable = false;
 
     @Setter
-    private boolean isPlayable = false;
+    private boolean isFinished = false;
 
     public void addPlayer(final String playerId, final Court court) {
 
