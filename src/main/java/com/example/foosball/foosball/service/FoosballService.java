@@ -1,11 +1,14 @@
 package com.example.foosball.foosball.service;
 
 import com.example.foosball.foosball.controller.dto.GameHistory;
-import com.example.foosball.foosball.controller.dto.Score;
+import com.example.foosball.foosball.controller.dto.LoginRequest;
+import com.example.foosball.foosball.controller.dto.Match;
+
 
 public interface FoosballService {
-    void setScore(final String team);
-    Score getScore();
+    Match scoreGoal(String foosballTableId, String team);
+    Match getScore(String foosballTableId);
     GameHistory getGameHistory();
-    void resetGame();
+    void endGame(String foosballTableId);
+    void login(LoginRequest loginRequest);
 }

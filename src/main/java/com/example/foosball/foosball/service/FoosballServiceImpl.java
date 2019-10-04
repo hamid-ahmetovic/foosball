@@ -1,56 +1,64 @@
 package com.example.foosball.foosball.service;
 
 import com.example.foosball.foosball.controller.dto.GameHistory;
-import com.example.foosball.foosball.controller.dto.Score;
+import com.example.foosball.foosball.controller.dto.LoginRequest;
+import com.example.foosball.foosball.controller.dto.Match;
+import com.example.foosball.foosball.controller.dto.Team;
+import com.example.foosball.foosball.exceptions.GameRunningException;
+import com.example.foosball.foosball.util.Court;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
+@Slf4j
 public class FoosballServiceImpl implements FoosballService {
 
-    private final static String HOME = "home";
-
-    private int homeScore;
-    private int awayScore;
-    private List<LocalTime> homeScoreHistory;
-    private List<LocalTime> awayScoreHistory;
+    private static final String HOME = "HOME";
     private GameHistory gameHistory;
-
+    private Map<String, Match> games;
 
     @PostConstruct
-    public void setGameHistory() {
-        gameHistory = new GameHistory();
-        gameHistory.setScores(new ArrayList<>());
+    public void init() {
+        // create thread safe games
+        this.games = Collections.synchronizedMap(new HashMap<>());
 
-        this.resetGame();
+        this.gameHistory = new GameHistory();
+        this.gameHistory.setMatches(new ArrayList<>());
     }
 
     @Override
-    public void setScore(final String team) {
-        final LocalTime now = LocalTime.now();
-        if (HOME.equalsIgnoreCase(team)) {
-            homeScore++;
-            homeScoreHistory.add(now);
+    public Match scoreGoal(final String foosballTableId, final String teamId) {
+        final Match match = this.games.get(foosballTableId);
+
+        final Team team;
+
+        if (FoosballServiceImpl.HOME.equals(teamId)) {
+            team = match.getHome();
         } else {
-            awayScore++;
-            awayScoreHistory.add(now);
+            team = match.getAway();
         }
+
+        match.getHome().scoreGoal();
+
+        // TODO: Make top score configurable
+        if (team.getScore() > 9) {
+            // TODO: save final match status to DB
+            match.setRunning(false);
+            this.games.remove(foosballTableId);
+        }
+
+        return match;
     }
 
     @Override
-    public Score getScore() {
-        final Score score = new Score();
-
-        score.setHomeScore(this.homeScore);
-        score.setAwayScore(this.awayScore);
-        score.setHomeScoreHistory(this.homeScoreHistory);
-        score.setAwayScoreHistory(this.awayScoreHistory);
-
-        return score;
+    public Match getScore(final String foosballTableId) {
+        return this.games.get(foosballTableId);
     }
 
     @Override
@@ -59,11 +67,41 @@ public class FoosballServiceImpl implements FoosballService {
     }
 
     @Override
-    public void resetGame() {
-        this.homeScore = 0;
-        this.awayScore = 0;
-        this.homeScoreHistory = new ArrayList<>();
-        this.awayScoreHistory = new ArrayList<>();
+    public void endGame(final String foosballTableId) {
+        this.games.remove(foosballTableId);
     }
 
+    @Override
+    public void login(final LoginRequest loginRequest) {
+
+        final String playerId = loginRequest.getPlayerId();
+        final String foosballTableId = loginRequest.getFoosballTableId();
+        final Court court = loginRequest.getCourt();
+
+        if (this.games.containsKey(foosballTableId)) {
+            // game is existing
+
+            log.info("Found running game with id {}", foosballTableId);
+
+            final Match match = this.games.get(foosballTableId);
+
+            if (match.isRunning()) {
+                // cannot login to a running game
+                log.info("User {} tried to log in to a running game.", playerId);
+                throw new GameRunningException();
+            }
+
+            match.addPlayer(playerId, court);
+        } else {
+            // create a new game
+
+            final Match match = new Match();
+
+            log.info("Created new foosball match with id {}", foosballTableId);
+
+            match.addPlayer(playerId, court);
+
+            this.games.put(foosballTableId, match);
+        }
+    }
 }

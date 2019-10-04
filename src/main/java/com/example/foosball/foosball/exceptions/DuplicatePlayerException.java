@@ -1,10 +1,10 @@
 package com.example.foosball.foosball.exceptions;
 
-public class DuplicatePlayerInTeamException extends FoosballException {
+public class DuplicatePlayerException extends FoosballException {
 
     private static final long serialVersionUID = -6632221991763896266L;
 
-    public DuplicatePlayerInTeamException() {
+    public DuplicatePlayerException() {
         super(Error.DUPLICATE_PLAYER);
     }
 }

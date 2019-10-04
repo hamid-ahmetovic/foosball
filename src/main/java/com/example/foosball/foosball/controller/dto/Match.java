@@ -4,26 +4,48 @@ import com.example.foosball.foosball.util.Court;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalTime;
-import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
 @Getter
-public class MatchStatus {
+@Slf4j
+public class Match {
     private Team home;
     private Team away;
 
     @Setter
-    private boolean isMatchRunning = true;
+    private boolean isRunning = false;
 
     @Setter
-    private boolean isMatchStarted = false;
+    private boolean isStarted = false;
 
-    public void addTeam(final Team team) {
-        if (Court.HOME.equals(team.getCourt())) {
-            this.home = team;
+    @Setter
+    private boolean isPlayable = false;
+
+    public void addPlayer(final String playerId, final Court court) {
+
+        if (Court.HOME.equals(court)) {
+            if (null == this.home) {
+                this.home = new Team();
+            }
+
+            this.home.addPlayer(playerId);
+
         } else {
-            this.away = team;
+            if (null == this.away) {
+                this.away = new Team();
+            }
+
+            this.away.addPlayer(playerId);
+        }
+
+        log.info("Player {} entered the game for team {}.", playerId, court);
+
+
+        if (this.home != null && this.away != null) {
+            // game is ready to play
+
+            this.setPlayable(true);
+            log.info("Match is ready to play!");
         }
     }
 }

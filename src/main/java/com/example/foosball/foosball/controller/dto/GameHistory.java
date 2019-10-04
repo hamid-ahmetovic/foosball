@@ -6,5 +6,5 @@ import java.util.List;
 
 @Data
 public class GameHistory {
-    private List<Score> scores;
+    private List<Match> matches;
 }

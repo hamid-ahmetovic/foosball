@@ -11,4 +11,7 @@ public class FoosballEvent {
     @NotBlank
     private String team;
 
+    @NotNull
+    @NotBlank
+    private String foosballTable;
 }
