@@ -40,7 +40,18 @@ public class Match {
 
         log.info("Player {} entered the game for team {}.", playerId, court);
 
+        this.checkMatchStatus();
+    }
 
+    public void removePlayer(final String playerId) {
+        final boolean removed = this.home.removePlayer(playerId) | this.away.removePlayer(playerId);
+
+        if (removed) {
+            log.info("Player {} left the game.", playerId);
+        }
+    }
+
+    private void checkMatchStatus() {
         if (this.home != null && this.away != null) {
             // game is ready to play
 

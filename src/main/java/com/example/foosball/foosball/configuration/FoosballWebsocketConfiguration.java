@@ -15,4 +15,6 @@ public class FoosballWebsocketConfiguration extends AbstractWebSocketMessageBrok
                 .setAllowedOrigins("*")
                 .withSockJS();
     }
+
+
 }

@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528f9aba-a447-4ac2-8f63-5f38df235ed2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+    <list default="true" id="528f9aba-a447-4ac2-8f63-5f38df235ed2" name="Default Changelist" comment="added getter to exception message">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foosball.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foosball.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/configuration/FoosballWebsocketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/configuration/FoosballWebsocketConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/GameHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/GameHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/LoginRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,164 +21,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="827663198">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="32" />
-          <entry key="properties" value="3" />
-          <entry key="xml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="32" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="7132" />
-          <entry key="xml" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="7132" />
-          <entry key="XML" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1756#1757#0" expanded="true" />
-                <element signature="e#1783#1784#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="548">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1632#1633#0" expanded="true" />
-                <element signature="e#1681#1682#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="49" selection-start-column="49" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -203,6 +64,8 @@
     <findStrings>
       <find>player</find>
       <find>log.info</find>
+      <find>favicon.ico</find>
+      <find>packa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,11 +74,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Score.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/SaveResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/util/Court.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/LoginRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/constants/errorcodes/Errorcode.java" />
@@ -223,15 +83,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerInTeamException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/GameHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/MatchHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/configuration/FoosballWebsocketConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/listener/FoosballEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -241,17 +110,48 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="834" />
-    <option name="height" value="1050" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="foosball" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="foosball" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="foosball" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="299" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,6 +192,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="foosball" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="foosball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foosball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foosball" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,6 +229,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="foosball" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="foosball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foosball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foosball" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,19 +247,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="foosball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foosball" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Team&#9;FILE&#9;file:///Users/hamid/Projekte/foosball1/foosball/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" />
+    <property name="SearchEverywhereHistoryKey" value="application.p&#9;FILE&#9;file:///Users/hamid/Projekte/foosball1/foosball/src/main/resources/application.properties&#10;FoosballC&#9;FILE&#9;file:///Users/hamid/Projekte/foosball1/foosball/src/main/java/com/example/foosball/foosball/controller/FoosballController.java&#10;Team&#9;FILE&#9;file:///Users/hamid/Projekte/foosball1/foosball/src/main/java/com/example/foosball/foosball/controller/dto/Team.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
@@ -377,42 +302,65 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569936762751</updated>
-      <workItem from="1569936765771" duration="21648000" />
+      <workItem from="1569936765771" duration="21816000" />
+      <workItem from="1570186920459" duration="12336000" />
+      <workItem from="1570219413018" duration="8022000" />
+      <workItem from="1573740409556" duration="171000" />
+      <workItem from="1573740958598" duration="1342000" />
+      <workItem from="1573800964157" duration="205000" />
+      <workItem from="1583911711264" duration="1006000" />
     </task>
+    <task id="LOCAL-00001" summary="added getter to exception message">
+      <created>1570173753024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570173753025</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21648000" />
+    <option name="totallyTimeSpent" value="44898000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.24969475" />
-      <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" visible="true" weight="0.24969475" />
-      <window_info anchor="bottom" id="SonarQube" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" weight="0.32959184" />
-      <window_info anchor="bottom" id="Spring" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50061053" side_tool="true" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49815497" visible="true" weight="0.2899878" />
+      <window_info id="Structure" order="1" sideWeight="0.501845" side_tool="true" weight="0.25274727" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44693878" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36632654" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.28469387" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarQube" order="8" weight="0.32970297" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="10" weight="0.32871288" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30714285" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50061053" side_tool="true" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.26617828" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +371,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="added getter to exception message" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getter to exception message" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class">
@@ -433,192 +382,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/SaveResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/constants/errorcodes/Errorcode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/constants/errormessages/Errormessage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.9.RELEASE/spring-messaging-5.1.9.RELEASE.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="171">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/FoosballApplication.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/GameHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/SaveResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.9.RELEASE/spring-messaging-5.1.9.RELEASE.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/constants/errorcodes/Errorcode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/constants/errormessages/Errormessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/util/Court.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="112" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1756#1757#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-          </folding>
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/FoosballApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="150">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/configuration/FoosballWebsocketConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/util/Court.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/DuplicatePlayerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/FoosballException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/GameRunningException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/listener/FoosballEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/service/FoosballServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#4449#4450#0" expanded="true" />
+            <element signature="e#4476#4477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/MatchHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -627,8 +522,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/FoosballEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="165">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/dto/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/exceptions/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/foosball/foosball/controller/FoosballController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -648,5 +578,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="install" />
   </component>
 </project>

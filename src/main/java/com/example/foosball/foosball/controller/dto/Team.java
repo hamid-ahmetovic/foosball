@@ -4,8 +4,8 @@ import com.example.foosball.foosball.exceptions.DuplicatePlayerException;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Slf4j
@@ -13,7 +13,7 @@ public class Team {
 
     private int score = 0;
 
-    private final List<String> players = new ArrayList<>();
+    private final Set<String> players = new HashSet<>();
 
     public void scoreGoal() {
         ++this.score;
@@ -26,5 +26,9 @@ public class Team {
         }
 
         this.players.add(playerId);
+    }
+
+    public boolean removePlayer(final String playerId) {
+        return this.players.remove(playerId);
     }
 }

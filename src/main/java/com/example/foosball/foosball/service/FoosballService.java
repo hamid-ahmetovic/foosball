@@ -6,10 +6,11 @@ import com.example.foosball.foosball.controller.dto.Match;
 import com.example.foosball.foosball.util.Court;
 
 public interface FoosballService {
+    void login(LoginRequest loginRequest);
+    void logout(String playerId, String foosballTableId);
     void startMatch(String foosballTableId);
     Match scoreGoal(String foosballTableId, Court court);
     Match getMatch(String foosballTableId);
-    MatchHistory getMatchHistory();
     void endGame(String foosballTableId);
-    void login(LoginRequest loginRequest);
+    MatchHistory getMatchHistory();
 }
