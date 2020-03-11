@@ -1,4 +1,4 @@
-package com.example.foosball.foosball.controller.dto;
+package com.example.foosball.controller.dto;
 
 import lombok.Data;
 

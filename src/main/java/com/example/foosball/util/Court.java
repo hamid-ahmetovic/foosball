@@ -1,4 +1,4 @@
-package com.example.foosball.foosball.util;
+package com.example.foosball.util;
 
 import lombok.AllArgsConstructor;
 

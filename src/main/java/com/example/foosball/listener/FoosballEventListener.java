@@ -1,6 +1,6 @@
-package com.example.foosball.foosball.listener;
+package com.example.foosball.listener;
 
-import com.example.foosball.foosball.service.FoosballService;
+import com.example.foosball.service.FoosballService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;

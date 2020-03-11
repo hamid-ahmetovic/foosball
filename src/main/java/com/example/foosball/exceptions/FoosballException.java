@@ -1,4 +1,4 @@
-package com.example.foosball.foosball.exceptions;
+package com.example.foosball.exceptions;
 
 import lombok.Getter;
 

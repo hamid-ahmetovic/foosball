@@ -1,6 +1,6 @@
-package com.example.foosball.foosball.controller.dto;
+package com.example.foosball.controller.dto;
 
-import com.example.foosball.foosball.util.Court;
+import com.example.foosball.util.Court;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
@@ -17,6 +17,5 @@ public class LoginRequest {
     private String foosballTableId;
 
     @NotNull
-    @NotBlank
     private Court court;
 }

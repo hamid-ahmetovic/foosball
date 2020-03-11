@@ -1,4 +1,4 @@
-package com.example.foosball.foosball;
+package com.example.foosball;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

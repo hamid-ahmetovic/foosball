@@ -1,4 +1,4 @@
-package com.example.foosball.foosball.configuration;
+package com.example.foosball.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.AbstractWebSocketMessageBrokerConfigurer;

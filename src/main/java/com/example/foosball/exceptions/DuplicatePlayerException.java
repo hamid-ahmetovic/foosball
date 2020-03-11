@@ -1,4 +1,4 @@
-package com.example.foosball.foosball.exceptions;
+package com.example.foosball.exceptions;
 
 public class DuplicatePlayerException extends FoosballException {
 
