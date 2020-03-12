@@ -1,17 +1,16 @@
 package com.example.foosball.controller.dto;
 
-import com.example.foosball.service.FoosballServiceImpl;
 import com.example.foosball.util.Court;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 
 @Getter
 @Slf4j
 public class Match {
+
     private final Team HOME = new Team();
     private final Team AWAY = new Team();
 
@@ -78,19 +77,8 @@ public class Match {
         }
     }
 
-    public boolean hasBeenLeft() {
+    public boolean isEmpty() {
         return HOME.getPlayers().isEmpty() && AWAY.getPlayers().isEmpty();
-    }
-
-    public boolean isDead() {
-        final LocalDateTime now = LocalDateTime.now();
-        final long difference = ChronoUnit.MINUTES.between(lastActionAt, now);
-
-        if (difference >= FoosballServiceImpl.FIVE_MINUTES) {
-            return true;
-        }
-
-        return false;
     }
 
     private void checkMatchStatus() {

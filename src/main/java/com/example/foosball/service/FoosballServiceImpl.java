@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -25,7 +26,7 @@ import java.util.Map;
 @Slf4j
 public class FoosballServiceImpl implements FoosballService {
 
-    public static final long FIVE_MINUTES = 6000000;
+    public static final long FIVE_MINUTES = 300000;
     private MatchHistory matchHistory;
     private Map<String, Match> matches;
 
@@ -86,7 +87,7 @@ public class FoosballServiceImpl implements FoosballService {
             throw new PlayerNotLoggedInException();
         }
 
-        if (match.isDead() || match.hasBeenLeft()) {
+        if (match.isEmpty()) {
             removeMatch(foosballTableId);
         } else {
             match.setLastActionAt(LocalDateTime.now());
@@ -158,15 +159,17 @@ public class FoosballServiceImpl implements FoosballService {
         matches.remove(foosballTableId);
     }
 
-    @Scheduled(fixedDelay = FIVE_MINUTES)
+    @Scheduled(fixedDelay = 5000)
     private void removeDeadMatches() {
         for (final Map.Entry<String, Match> entry : matches.entrySet()) {
             final String foosballTableId = entry.getKey();
             final Match match = entry.getValue();
 
-            if (match.isDead()) {
-                log.info("Removing dead match with ID {}", foosballTableId);
-                matches.remove(foosballTableId);
+            final LocalDateTime now = LocalDateTime.now();
+            final long difference = ChronoUnit.MILLIS.between(match.getLastActionAt(), now);
+
+            if (difference >= FIVE_MINUTES) {
+                removeMatch(foosballTableId);
             }
         }
     }

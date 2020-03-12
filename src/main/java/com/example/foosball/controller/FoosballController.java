@@ -38,32 +38,32 @@ public class FoosballController {
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody @Valid final LoginRequest loginRequest) {
         foosballService.login(loginRequest);
-        pushMatchScoreToWebSocket(loginRequest.getFoosballTableId());
+        pushMatchToWebSocket(loginRequest.getFoosballTableId());
         return ResponseEntity.ok(OK);
     }
 
     @PostMapping("/logout")
     public ResponseEntity<String> logout(@RequestBody @Valid final LogoutRequest logoutRequest) {
         foosballService.logout(logoutRequest);
-        pushMatchScoreToWebSocket(logoutRequest.getFoosballTableId());
+        pushMatchToWebSocket(logoutRequest.getFoosballTableId());
         return ResponseEntity.ok(OK);
     }
 
     @PutMapping("/match/start/{foosballTableId}")
     public ResponseEntity<String> startMatch(@PathVariable final String foosballTableId) {
         foosballService.startMatch(foosballTableId);
-        pushMatchScoreToWebSocket(foosballTableId);
+        pushMatchToWebSocket(foosballTableId);
         return ResponseEntity.ok(OK);
     }
 
     @PostMapping("/match/score")
     public ResponseEntity<String> scoreGoal(@RequestBody @Valid final ScoreEvent scoreEvent) {
         foosballService.scoreGoal(scoreEvent.getFoosballTableId(), scoreEvent.getCourt());
-        pushMatchScoreToWebSocket(scoreEvent.getFoosballTableId());
+        pushMatchToWebSocket(scoreEvent.getFoosballTableId());
         return ResponseEntity.ok(OK);
     }
 
-    private void pushMatchScoreToWebSocket(final String foosballTableId) {
+    private void pushMatchToWebSocket(final String foosballTableId) {
         try {
             final Match match = foosballService.getMatch(foosballTableId);
             simpMessagingTemplate.convertAndSend("/match/" + foosballTableId, match);
