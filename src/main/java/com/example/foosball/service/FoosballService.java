@@ -12,6 +12,6 @@ public interface FoosballService {
     void startMatch(String foosballTableId);
     void scoreGoal(String foosballTableId, Court court);
     Match getMatch(String foosballTableId);
-    void endGame(String foosballTableId);
+    void finishMatch(String foosballTableId);
     MatchHistory getMatchHistory();
 }

@@ -6,6 +6,7 @@ import com.example.foosball.controller.dto.Match;
 import com.example.foosball.controller.dto.ScoreEvent;
 import com.example.foosball.exceptions.Error;
 import com.example.foosball.exceptions.FoosballException;
+import com.example.foosball.exceptions.MatchNotExistingException;
 import com.example.foosball.service.FoosballService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -30,42 +31,43 @@ import javax.validation.Valid;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class FoosballController {
 
+    private static final String OK = "OK";
     private final FoosballService foosballService;
     private final SimpMessagingTemplate simpMessagingTemplate;
 
     @PostMapping("/login")
-    public ResponseEntity<HttpStatus> login(@RequestBody @Valid final LoginRequest loginRequest) {
+    public ResponseEntity<String> login(@RequestBody @Valid final LoginRequest loginRequest) {
         foosballService.login(loginRequest);
         pushMatchScoreToWebSocket(loginRequest.getFoosballTableId());
-        return ResponseEntity.ok(HttpStatus.OK);
+        return ResponseEntity.ok(OK);
     }
 
     @PostMapping("/logout")
-    public ResponseEntity<HttpStatus> logout(@RequestBody @Valid final LogoutRequest logoutRequest) {
+    public ResponseEntity<String> logout(@RequestBody @Valid final LogoutRequest logoutRequest) {
         foosballService.logout(logoutRequest);
         pushMatchScoreToWebSocket(logoutRequest.getFoosballTableId());
-        return ResponseEntity.ok(HttpStatus.OK);
+        return ResponseEntity.ok(OK);
     }
 
     @PutMapping("/match/start/{foosballTableId}")
     public ResponseEntity<String> startMatch(@PathVariable final String foosballTableId) {
         foosballService.startMatch(foosballTableId);
         pushMatchScoreToWebSocket(foosballTableId);
-        return ResponseEntity.ok("OK");
+        return ResponseEntity.ok(OK);
     }
 
     @PostMapping("/match/score")
     public ResponseEntity<String> scoreGoal(@RequestBody @Valid final ScoreEvent scoreEvent) {
         foosballService.scoreGoal(scoreEvent.getFoosballTableId(), scoreEvent.getCourt());
         pushMatchScoreToWebSocket(scoreEvent.getFoosballTableId());
-        return ResponseEntity.ok("OK");
+        return ResponseEntity.ok(OK);
     }
 
     private void pushMatchScoreToWebSocket(final String foosballTableId) {
-        final Match match = foosballService.getMatch(foosballTableId);
-        if (null != match) {
+        try {
+            final Match match = foosballService.getMatch(foosballTableId);
             simpMessagingTemplate.convertAndSend("/match/" + foosballTableId, match);
-        }
+        } catch (final MatchNotExistingException ex) { }
     }
 
     @ExceptionHandler({ FoosballException.class })
